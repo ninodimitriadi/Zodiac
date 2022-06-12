@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    background-color: #AEC6CF;
+}
+.menu {
+    width: 100%;
+    min-height: 80px;
+    border-bottom: solid rgb(1, 1, 77) 1px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 130px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 10px 5px;
+    font-family: cursive;
+    font-size: 25px;
+    font-weight: bold;
+}
+.menu a {
+    color: rgb(1, 1, 77);
+    text-decoration: none;
+    padding-left: 40px;
+}
+
+.menu a:hover  {
+    color: #0c0cac;
+}
+.cover {
+    position: relative;
+}
+.cover img {
+    position: absolute;
+    top: -21px;
+    width: 100%;
+}
+.cover h1 {
+    position: absolute;
+    left: 40%;
+    font-size: 40px;
+    color: antiquewhite;
+}
+.table {
+    position: absolute;
+    top: 250px;
+    left: 250px;
+}
+.table table {
+    height: 200px;
+    width: 1200px;
+}
+.table td {
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    margin-top: 2px;
+    font-size: 15px;
+}
+.table img {
+    margin: auto;
+    height: 150px;
+    width: 150px;
+}
+.item {
+    height: fit-content;
+    width: 70%;
+    position: relative;
+    top: 1100px;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 50px;
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+    15px 15px 15px rgba(0,0,0,0.1),
+    inset -50px -50px 50px rgba(255, 255, 255, 0.2),
+    inset 50px 50px 50px rgba(0,0,0,0.1);
+}
+.conteiner h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.conteiner .desc {
+    display: block;
+    margin-left: 10px;
+    margin-left: 10px;
+    word-spacing: 5px;
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+@media (max-width: 600px) {
+    .menu {
+        display: block;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .menu li {
+        display: list-item;
+        text-align: center;
+    }
+    .table {
+        position: absolute;
+        top: 500px;
+        height: 100px;
+        width: 200px;
+        left: 0%;
+    }
+    .table td {
+        height: 50px;
+        width: 70px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .menu {
+        display: block;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .menu li {
+        display: list-item;
+        text-align: center;
+    }
+    .table {
+        position: absolute;
+        top: 500px;
+        height: 100px;
+        width: 200px;
+        left: 0%;
+    }
+    .table td {
+        height: 50px;
+        width: 70px;
+    }
+
+}

@@ -1,0 +1,135 @@
+body{
+    background-image: url(imgs/contact.webp);
+    margin: 0px;
+}
+.menu {
+    width: 100%;
+    min-height: 80px;
+    border-bottom: solid rgb(3, 3, 158) 1px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 10px 5px;
+    font-family: cursive;
+    font-size: 25px;
+    font-weight: bold;
+}
+.menu a {
+    color: rgb(3, 3, 158);
+    text-decoration: none;
+    padding-left: 40px;
+}
+
+.menu a:hover  {
+    color: #0c0cac;
+}
+
+.our_info {
+    width: 100%;
+    height: fit-content;
+}
+.our_info h1 {
+    margin: auto;
+    margin-top: 70px;
+    font-size: 50px;
+    text-align: center;
+    color: antiquewhite;
+}
+.our_info .inf {
+    height: fit-content;
+    width: 100%;
+    font-size: 20px;
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.our_info .item {
+    position: relative;
+    margin-top: 15px;
+}
+.your_info_conteiner {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: flex-start;
+}
+.your_info_conteiner .con1{
+    height: fit-content;
+    margin-top: 30px;
+    width: 100%; 
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.con1 input {
+    height: 50px;
+    width: 350px;
+    border-radius: 5px;
+}
+.your_info_conteiner .con2 {
+    height: fit-content;
+    margin-top: 30px;
+    width: 100%; 
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.con2 textarea {
+    height: 200px;
+    width: 350px;
+    border-radius: 5px;
+}
+button {
+    position: relative;
+    display: flex;
+    margin: auto;
+    margin-top: 60px;
+    width: 15%;
+    height: 50px;
+    font-size: 25px;
+    background: #07072b;
+    border-radius: 100px;
+    box-shadow: #07072b 10px 10px 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 1px 60px; 
+}
+@media (max-width: 600px) {
+    .menu {
+        display: block;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .menu li {
+        display: list-item;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .menu {
+        display: block;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .menu li {
+        display: list-item;
+        text-align: center;
+    }
+}

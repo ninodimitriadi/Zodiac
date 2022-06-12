@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+}
+.menu {
+    width: 100%;
+    min-height: 80px;
+    border-bottom: solid rgb(1, 1, 77) 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 10px 5px;
+    font-family: cursive;
+    font-size: 25px;
+    font-weight: bold;
+}
+.menu a {
+    color: rgb(1, 1, 77);
+    text-decoration: none;
+    padding-left: 40px;
+}
+
+.menu a:hover  {
+    color: #0c0cac;
+}
+.slider {
+    width: 100%;
+    min-height: 300px;
+    background-color: #b19cd9;
+    position: relative;
+}
+.slider img {
+    position: absolute;
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    top: 13%;
+    left: 45%;
+}
+.slider p {
+    position: absolute;
+    color: aliceblue;
+    font-size: 30px;
+    padding: 8px 12px;
+    width: 100%;
+    top: 210px;
+    text-align: center;
+}
+.number {
+    color: aliceblue;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.zodiac_conteiner {
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sign {
+    width: 90%;
+    height: 300px;
+    box-sizing: border-box;
+    margin-top: 15px;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+}
+.sign img {
+    position: absolute;
+    border-radius: 20px;
+    height: 100%;
+    width: 30%;
+}
+.sign h5 {
+    font-size: 32px;
+    margin-top: 0px;
+}
+.sign .description {
+    height: 100%;
+    width: 65%;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        display: block;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .menu li {
+        display: list-item;
+        text-align: center;
+    }
+    .zodiac_conteiner {
+        display: block;
+        width: 100%;
+    }
+    .sign {
+        display: block;
+        height: 250px;
+        width: 640px;
+        font-size: 12px;
+    }
+    .sign h5 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .menu {
+        display: block;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .menu li {
+        display: list-item;
+        text-align: center;
+    }
+    .zodiac_conteiner {
+        display: list-item;
+        width: 100%;
+    }
+    .sign {
+        display: block;
+        height: 250px;
+        width: 750px;
+        font-size: 12px;
+    }
+    .sign h5 {
+        font-size: 15px;
+    }
+}
