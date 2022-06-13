@@ -143,7 +143,7 @@ function zodiac_calculator() {
             req.open('GET', "http/sagittarius.html");
         }
         else if (month == 12 && day >= 22 || month == 1 && day <= 20){
-            req.open('GET', "capricorn.html");
+            req.open('GET', "http/capricorn.html");
         }
         else if (month == 1 && day >= 21 || month == 2 && day <= 18){
              req.open('GET', "http/aquarius.html");
